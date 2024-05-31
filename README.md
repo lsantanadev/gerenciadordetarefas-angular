@@ -56,4 +56,3 @@ Inclusive, o gerente já havia comentado sobre a importância de um sistema como
 - Há muito o que melhorar ainda, e estou sempre em busca de reformulações e aprimoramentos.
 
 
-- Agradeço primeiramente a Deus e à equipe do IATec pela oportunidade de realizar este projeto. Espero que gostem do resultado!
