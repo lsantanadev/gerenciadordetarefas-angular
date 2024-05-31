@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #0689da 0%, #000000 30%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 390vh;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+     margin-top: 20px;
+}
+
+.textmkt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+  }
+  
+
+.container {
+    margin-top: 10px;
+}
+
+ 
+ #carouselExampleRide .carousel-inner img {
+     width: 100%;
+     height: auto;
+ }
+
+ #carouselExampleRide {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     width: 100%;
+     margin: 660px auto 0;
+     max-width: 1400px;
+     overflow: hidden;
+     margin-top: -1320px;
+ }
+
+ #carouselExampleRide .carousel-item {
+     text-align: center;
+ }
+
+ #carouselExampleRide {
+     border: 2px solid #bfd1ec;
+     border-radius: 15px;
+     box-shadow: 0 0 10px rgba(90, 89, 89, 0.5);
+     overflow: hidden;
+ }
+
+ .centralizartudo {
+     max-width: 1000px;
+     margin: 0 auto;
+ }
+
+ @media only screen and (max-width: 768px) {
+     .centralizartudo {
+         width: 100%;
+         padding: 0 10px;
+         box-sizing: border-box;
+     }
+ }
+
+ .carousel-inner img {
+     width: 100%;
+     height: auto;
+ }
+
+ #carouselExampleRide {
+     width: 100%;
+     margin: 20px auto;
+ }
+
+ .carousel-control-prev,
+ .carousel-control-next {
+     top: 50%;
+     transform: translateY(-50%);
+ }
+
+ /* Para dispositivos móveis */
+ @media (max-width: 575.98px) {
+     #carouselExampleRide {
+         max-width: 100%;
+         margin-top: -650px;
+         
+     }
+ }
+
+ /* Para PCs */
+ @media (min-width: 576px) {
+     #carouselExampleRide {
+         max-width: 80%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: -1320px;
+     }
+ }
+
+
+ .task-card-actions a {
+     margin-right: 10px;
+    
+ }
+
+.task-container {
+   
+    margin: 10px;
+    padding: 10px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+   
+}
+
+.task-header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.task-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.task-card {
+    flex: 0 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card.completed {
+    background-color: #e0f7fa;
+}
+
+.task-card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.task-card-description {
+    margin-bottom: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.task-card-status {
+   
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.status-label input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.status-label input[type="checkbox"]:checked {
+    accent-color: #3dfb69;
+}
+
+.status-label input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px rgba(40, 167, 69, 0.4);
+}
+
+.status-label:hover input[type="checkbox"] {
+    box-shadow: 0 0 5px 2px rgba(40, 167, 69, 0.2);
+}
+
+.task-card-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+    .task-card {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .task-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Estilos para telas maiores que 1200px */
+@media (min-width: 1200px) {
+    .centralizartudo {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .task-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .task-card {
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-control {
+    max-width: 50%; 
+  }
+  
+  .btn {
+    min-width: 50px; 
+  }
+
+ 
+  
+  
+  
+

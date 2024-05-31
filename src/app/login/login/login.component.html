@@ -1,0 +1,20 @@
+<body>
+
+<h1 class="main-title">
+  <span class="down">Realize o Login</span> <br>
+  <span class="up"><strong> com dados cadastrados!</strong> </span>
+</h1><br>
+<form class="row g-3" (ngSubmit)="login()">
+  <div class="col-auto">
+    <label for="staticEmail2" class="form-label">Email:</label>
+    <input type="text" class="form-control" id="staticEmail2" placeholder="Email" [(ngModel)]="email" name="email">
+</div>
+<div class="col-auto">
+    <label for="inputPassword2" class="form-label">Senha:</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password" [(ngModel)]="password" name="password">
+</div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Entrar</button>
+  </div>
+</form>
+</body>

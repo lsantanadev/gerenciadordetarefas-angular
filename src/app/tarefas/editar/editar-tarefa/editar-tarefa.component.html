@@ -1,0 +1,54 @@
+
+<body>
+  <br><br><br>
+<h1 class="text-center"><strong>Editar tarefa </strong></h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form #formTarefa="ngForm" class="bg-light p-4 rounded shadow">
+        <!-- Campo de edição para o nome da tarefa -->
+        <div class="form-group">
+          <label for="nome" class="mb-1">Tarefa:</label>
+          <input type="text" class="form-control rounded-0" id="nome" name="nome" [(ngModel)]="tarefa.Titulo"
+            #nome="ngModel" minlength="2" required>
+          <div *ngIf="nome.errors && (nome.dirty || nome.touched)" class="alert alert-danger mt-2">
+            <div [hidden]="!nome.errors.required">
+              Digite a tarefa.
+            </div>
+            <div [hidden]="!nome.errors.minlength">
+              A tarefa deve conter ao menos 2 caracteres.
+            </div>
+          </div>
+        </div>
+
+        <!-- Campo de edição para a descrição da tarefa -->
+        <div class="form-group">
+          <label for="descricao" class="mb-1">Descrição:</label>
+          <textarea class="form-control rounded-0" id="descricao" name="descricao" [(ngModel)]="tarefa.Descricao"
+            #descricao="ngModel" minlength="10" required></textarea>
+          <div *ngIf="descricao.errors && (descricao.dirty || descricao.touched)" class="alert alert-danger mt-2">
+            <div [hidden]="!descricao.errors.required">
+              Digite a descrição da tarefa.
+            </div>
+            <div [hidden]="!descricao.errors.minlength">
+              A descrição deve conter ao menos 10 caracteres.
+            </div>
+          </div>
+        </div>
+
+        <!-- Botão para atualizar -->
+        <div class="form-group text-center mt-4">
+          <button type="submit" class="btn btn-primary btn-lg" style="margin-right: 10px;" (click)="atualizar(tarefa)"
+            [disabled]="!formTarefa.form.valid">
+            <i class="bi bi-check-circle-fill"></i> Atualizar
+          </button>
+          <a [routerLink]="['/tarefas/listar']" class="btn btn-dark btn-lg ml-3">
+            <i class="bi bi-arrow-left-circle-fill"></i> Voltar
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>

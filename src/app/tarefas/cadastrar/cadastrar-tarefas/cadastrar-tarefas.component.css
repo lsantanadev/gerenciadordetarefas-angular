@@ -1,0 +1,17 @@
+ body {
+   font-family: 'Montserrat', sans-serif;
+   background: linear-gradient(135deg, #0062a9 0%, #000000 100%);
+   min-height: 100vh;
+  
+ }
+ 
+ .custom-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+  }
+
+  h1{
+    color: #fff;;
+  }

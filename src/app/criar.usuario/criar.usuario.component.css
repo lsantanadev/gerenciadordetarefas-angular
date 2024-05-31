@@ -1,0 +1,126 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(135deg, #0689da 0%, #000000 60%);
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-title {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      
+      .main-title .up {
+        font-weight: bold;
+        color: #0689da; /* Cor azul */
+      }
+      
+      .main-title .down {
+        font-size: 18px;
+        color: #333; /* Cor padrão */
+        margin-top: 10px;
+      }
+      
+
+.ld-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ld-login .left {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ld-login .left .main-title {
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ld-login .left .main-title .up {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.ld-login .left .main-title .down {
+    font-size: 18px;
+}
+
+.ld-login .left .radio-buttons {
+    margin-bottom: 20px;
+}
+
+.ld-login .left .radio-buttons .title {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.ld-login .left .radio-buttons .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ld-login .left .radio-buttons .buttons .ld-radio {
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.ld-login .left .radio-buttons .role-invalid {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.ld-login .left mat-form-field {
+    width: 100%;
+}
+
+.ld-login .left button {
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    display: block;
+    background-color: #0679c0   ;
+}
+
+.ld-login .left button:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Estilo para a mensagem de sucesso */
+.swal2-icon.success::before {
+    content: "\f058"; /* Ícone de check do Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    color: #28a745; /* Cor verde */
+  }
+  
+  /* Estilo para a mensagem de erro */
+  .swal2-icon.error::before {
+    content: "\f06a"; /* Ícone de exclamação do Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    color: #dc3545; /* Cor vermelha */
+  }
+  
+

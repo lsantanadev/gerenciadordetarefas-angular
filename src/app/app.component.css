@@ -1,0 +1,62 @@
+
+.navbar {
+  background: linear-gradient(135deg, #0689da 0%, #000000 80%);
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Indie Flower', cursive;
+}
+
+.link-text {
+  margin-left: 10px;
+  /* Adiciona um espaço entre a logo e o texto */
+}
+
+.logo {
+  width: 200px;
+  /* Define a largura da logo */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  /* Fonte Montserrat */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 20px 10px 10px 15px;
+  transition: color 0.3s;
+  /* Adiciona transição suave para a mudança de cor */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0062a4;
+  /* Altera a cor ao passar o mouse sobre os links */
+}
+
+.navbar-toggler .custom-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  color: #fff;
+ 
+}
+
+.navbar-toggler {
+ 
+  border: 1px solid #fff;
+  /* Borda branca */
+}
+
+
